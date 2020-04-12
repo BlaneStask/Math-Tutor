@@ -36,9 +36,9 @@ public class driver{
 		
 		//sets val1 and val2
 		Random rand1 = new Random();
-		int val1 = rand1.nextInt(11);
+		int val1 = rand1.nextInt(10) + 1;
 		Random rand2 = new Random();
-		int val2 = rand2.nextInt(11);
+		int val2 = rand2.nextInt(10) + 1;
 		
 		//sets answer based on op, val1 and val2
 		int answer = 0;
