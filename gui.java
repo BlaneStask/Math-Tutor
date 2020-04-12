@@ -1,19 +1,3 @@
-/*
-Author: Blane Staskiewicz
-E-mail: bas6248@psu.edu
-Course: CMPSC 221
-Assignment: Programming Assignment 5
-Due date: 4/14/2020
-Files: package math_tutor - driver.java, gui.java
-Purpose: 
-Compiler/IDE: Java SE Development Kit 13.0.2/Eclipse Foundation
-  IDE 2019-12
-Operating system: macOS Catalina Version 10.15.4
-Reference(s): Java 10 API - Oracle Documentation
-  (https://docs.oracle.com/javase/10/docs/api/)
-  Lecture Slides and Demo Programs
-*/ 
-
 package math_tutor;
 import java.awt.*;
 import java.awt.event.*;
