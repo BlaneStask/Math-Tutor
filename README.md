@@ -22,5 +22,13 @@ to solve the problem.
 program provides him or her with the opportunity to solve additional problems by clicking on a “New
 Problem” button.
 
+## Packages and Imports
+
+```Java
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+```
+
 ## Screen Shots
 
