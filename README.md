@@ -32,3 +32,16 @@ import javax.swing.*;
 
 ## Screen Shots
 
+Here is a sample run of the program:
+
+<img src ="screen_shots/run_one_0.png" width="350">
+
+<img src ="screen_shots/run_one_1.png" width="350">
+
+<img src ="screen_shots/run_one_2.png" width="350">
+
+Another sample:
+
+<img src ="screen_shots/run_two_0.png" width="350">
+
+<img src ="screen_shots/run_two_1.png" width="350">
