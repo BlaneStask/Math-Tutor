@@ -1,4 +1,4 @@
-# Math-Tutor
+# Math Tutor
 
 Description:
 
