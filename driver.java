@@ -1,28 +1,34 @@
 package math_tutor;
 import java.util.*;
 
+/**
+* <h1>Math Tutor</h1>
+* A GUI‐based Java application that would help an 
+* elementary school student learn the mathematical
+* operations of addition, subtraction, and multiplication.
+*
+* @author  Blane Staskiewicz
+*/
 public class driver{ 
-	/** This method is the main/driver method
+	 /** 
+	 * The main/driver method
 	 * 
-	 * @throws Exception 
-	 * @call				calls other methods for values
+	 * @param args	Not used
 	 */
 	public static void main(String[] args) {
-			new_question();
+		new_question();
 	}
-	/** This method is used to get a new question
-	 * 
-	 * @throws Exception e	 ends program
-	 * @call				 calls to prompt for gui
+	 /** 
+	 * Used to get a new question
 	 */
 	public static void new_question() {
 		int count = 0;
 		
-		//random 1-3 for operation
+		// random 1-3 for operation
 		Random rand = new Random();
 		int operation = rand.nextInt(3) + 1;
 		
-		//set op
+		// set op
 		String op = "";
 		if(operation == 1) {
 			op = "plus";
@@ -34,13 +40,13 @@ public class driver{
 			op = "times";
 		}
 		
-		//sets val1 and val2
+		// sets val1 and val2
 		Random rand1 = new Random();
 		int val1 = rand1.nextInt(10) + 1;
 		Random rand2 = new Random();
 		int val2 = rand2.nextInt(10) + 1;
 		
-		//sets answer based on op, val1 and val2
+		// sets answer based on op, val1 and val2
 		int answer = 0;
 		if(op == "plus") {
 			answer = val1 + val2;
@@ -53,29 +59,29 @@ public class driver{
 		}
 		
 		int input = 0;
-		//opening prompt for math tutor application
+		// opening prompt for math tutor application
 		gui window = new gui();
-        window.prob.setText("How much is " + val1 + " " + op + " " + val2);
-        window.ans.setText("Please enter your answer.");
-        
-        //wait until enter key is pressed
+		window.prob.setText("How much is " + val1 + " " + op + " " + val2);
+		window.ans.setText("Please enter your answer.");
+
+		// wait until enter key is pressed
 		while(window.f.isShowing() == true) {
 			System.out.print("");
 		}
 		
-		//new question after button press/enter with no input
+		// new question after button press/enter with no input
 		if(window.tf.getText().equals("")) {
 			new_question();
 		}
 		
-        //get user input
+        	// get user input
 		if(!window.tf.getText().equals("")) {
 			String user_input = window.tf.getText();
 			input = Integer.parseInt(user_input);
 		}
         
-        //calls until correct value and checker method
-        window.until_correct(op, val1, val2, answer, count, input);
+		// calls until correct value and checker method
+		window.until_correct(op, val1, val2, answer, count, input);
 	}
 }
 
